@@ -12,14 +12,24 @@ import {
 import { SignUpData, VideoInput } from "..";
 import { DocumentPickerAsset } from "expo-document-picker";
 
+import { 
+  EXPO_PUBLIC_ENDPOINT, 
+  EXPO_PUBLIC_PLATFORM, 
+  EXPO_PUBLIC_PROJECT_ID, 
+  EXPO_PUBLIC_DATABASE_ID, 
+  EXPO_PUBLIC_USER_COLLECTION_ID, 
+  EXPO_PUBLIC_VIDEO_COLLECTION_ID, 
+  EXPO_PUBLIC_STORAGE_ID 
+} from '@env';
+
 export const appwriteConfig = {
-  endpoint: "https://cloud.appwrite.io/v1",
-  platform: "com.younes.aora",
-  projectId: "663a19ca001206aff53c",
-  dataBaseId: "663a1aee00329c46a4a5",
-  userCollectionId: "663a1b0c002b57256d13",
-  videoCollectionId: "663a1b320027a37a851b",
-  storageId: "663a1ccb00119946353c",
+  endpoint: EXPO_PUBLIC_ENDPOINT,
+  platform: EXPO_PUBLIC_PLATFORM,
+  projectId: EXPO_PUBLIC_PROJECT_ID,
+  dataBaseId: EXPO_PUBLIC_DATABASE_ID,
+  userCollectionId: EXPO_PUBLIC_USER_COLLECTION_ID,
+  videoCollectionId: EXPO_PUBLIC_VIDEO_COLLECTION_ID,
+  storageId: EXPO_PUBLIC_STORAGE_ID,
 };
 const {
   endpoint,
